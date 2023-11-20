@@ -1,3 +1,5 @@
 *.csv
 *.svg
 ./forecast_data
+*.txt
+cred.json
