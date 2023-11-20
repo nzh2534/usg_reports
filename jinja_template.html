@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>USAID BF Data</title>
+  <style>
+    body {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d3/Seal_of_the_United_States_Agency_for_International_Development.svg'); 
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+      background-position: center; 
+      background-color: rgba(255,255,255,0.9);
+      background-blend-mode: lighten;
+    }
+    .header-center {
+      background-color: #38517b;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+</head>
+  <div class="header-center">
+    <p style='font-family: Courier New, monospace; color: white;'> --- [pdsr custom reports: usaid business forecast weekly updates] --- </p>
+  </div>
+  <div id="#USAID">
+    <h2>The following opportunities were removed:</h2>
+    <ul>
+    {% for opp in removed %}
+      <li>
+        [<b>{{ opp.ou }}</b>]: {{ opp.title }}
+      </li>
+    {% endfor %}
+    </ul>
+    <br>
+    <h2>The following opportunities were added:</h2>
+    <ul>
+      {% for opp in added %}
+        <li>
+          [<b>{{ opp.ou }}</b>]: <a href={{opp.url}} target='_blank'>{{ opp.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <br>
+    <h2>The following opportunities were changed:</h2>
+    <ul>
+      {% for opp in changed %}
+        <li>
+          [<b>{{ opp.ou }}</b>]: <a href={{opp.url}} target='_blank'>{{ opp.title }}</a>
+          <ul>
+            {% for change in opp.changes %}
+              <li>The <b>{{ change }}</b> was changed from {{ opp.changes[change][0] }} to {{ opp.changes[change][1] }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+        <br>
+      {% endfor %}
+    </ul>
+      <br>
+  </div>
+</body>
+</html>
