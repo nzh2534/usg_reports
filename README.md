@@ -14,4 +14,4 @@ Automated the process of informing Business Development staff about changes to U
 
 ![USAID Report](https://github.com/nzh2534/usg_reports/blob/main/usaidreport.png)
 
-![Grants.Gov Report](https://github.com/nzh2534/usg_reports/blob/main/grantsgov.png)
+![Grants.Gov Report](https://github.com/nzh2534/usg_reports/blob/main/grantsgov2.png)
