@@ -8,4 +8,8 @@ Automated the process of informing Business Development staff about changes to U
 
 📊 Creating custom HTML/CSS/JS reports (templated using Jinja2) for USAID Business Forecast data
 
+![USAID Report](https://github.com/nzh2534/usg_reports/blob/main/usaidreport.png)
+
 📊 Creating custom HTML/CSS/JS reports for Grants.Gov data
+
+![Grants.Gov Report](https://github.com/nzh2534/usg_reports/blob/main/grantsgov.png)
